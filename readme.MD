@@ -1,6 +1,6 @@
-## CS
+# CS
 
-- ### 운영체제
+- ## 운영체제
 
-- ### Java
+- ## Java
   * [HashMap](./Java/HashMap.md)

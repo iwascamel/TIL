@@ -2,7 +2,7 @@
 
 ## HashMap 자료구조
 
-### :package: Bucket 
+### Bucket 
 
 * Bucket이란?
   * HashMap의 Bucket은 key값들의 집합을 의미한다.

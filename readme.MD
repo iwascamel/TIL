@@ -3,4 +3,4 @@
 - ## 운영체제
 
 - ## Java
-  * [HashMap](./Java/HashMap.md)
+  * [HashMap](./Java/HashMap/HashMap.md)

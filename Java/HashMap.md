@@ -2,13 +2,13 @@
 
 ## HashMap 자료구조
 
-### Bucket
+### 📦 Bucket 
 
 * Bucket이란?
   * HashMap의 Bucket은 key값들의 집합을 의미한다.
   * Bucket의 key에 mapping되는 자료구조는 LinkedList나 Red-Black tree이다.
 
-### HashMap 충돌
+### 📦 HashMap 충돌
 
 key값은 int형이고, 최대 2^32까지만 가능하므로 충돌은 불가피하다.
 (최대 2^32이지만, 모든 자료구조마다 2^32를 들고 있기엔 너무 비대하므로 실제 자료구조 사용에서는 2^32보다 작은 값을 들고있다.)
@@ -35,7 +35,7 @@ HawhCode는 비유를 하자면 생일이라고 하면 될 것 같다.
 생일이 같은 사람이라고 해서 같은 사람인게 아니다.
 반면 같은 사람이라고 하면 생일이 같기 때문에, <u>`equals`가 같다면 `hashcode`</u>역시 같아야 한다.
 
-### Put method 시
+### 📦 Put method 시
 
 만약 hashMap에 특정 object를 넣는다고 해보자.
 hashMap은 아래와 같이 object의 hashcode를 이용해서 bucket의 값을 만든다.
@@ -47,7 +47,7 @@ static final int hash(Object key) {
 }
 ```
 
-### * [EqualsAndHashCode](EqualsAndHashCode.md)
+> [EqualsAndHashCode](EqualsAndHashCode.md)
 
 <hr/>
 

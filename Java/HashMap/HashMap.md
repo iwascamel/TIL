@@ -4,25 +4,25 @@
 
 ### Bucket 
 
-* Bucket이란?
-  * HashMap의 Bucket은 key값들의 집합을 의미한다.
-  * Bucket의 key에 mapping되는 자료구조는 LinkedList나 Red-Black tree이다.
+> * Bucket이란?
+>   * HashMap의 Bucket은 key값들의 집합을 의미한다.
+>   * Bucket의 key에 mapping되는 자료구조는 LinkedList나 Red-Black tree이다.
 
 ### HashMap 충돌
 
-key값은 int형이고, 최대 2^32까지만 가능하므로 충돌은 불가피하다.
-(최대 2^32이지만, 모든 자료구조마다 2^32를 들고 있기엔 너무 비대하므로 실제 자료구조 사용에서는 2^32보다 작은 값을 들고있다.)
+> key값은 int형이고, 최대 2^32까지만 가능하므로 충돌은 불가피하다.
+> (최대 2^32이지만, 모든 자료구조마다 2^32를 들고 있기엔 너무 비대하므로 실제 자료구조 사용에서는 2^32보다 작은 값을 들고있다.)
 
 충돌이 일어나면 2가지 해결방법이 있다.
-* Chaning
-  * key값이 겹친다면, linkedlist로 잇는 방법
-* Open Addressing(개방 주소법)
-  * linear probing
-    * 다음 값에 집어넣는다.
-  * quadratic
-    * 제곱수
-  * double
-    * 해시 2번 적용
+> * Chaning
+>   * key값이 겹친다면, linkedlist로 잇는 방법
+> * Open Addressing(개방 주소법)
+>   * linear probing
+>     * 다음 값에 집어넣는다.
+>   * quadratic
+>     * 제곱수
+>   * double
+>     * 해시 2번 적용
 
 java에서는 기본적으로 chaning을 사용하지만, 길이가 8이상이 되면 Red-Black Tree 자료구조를 사용한다.
 LinkedList은 O(n), Red Black Tree는 O(nlogn)이다.

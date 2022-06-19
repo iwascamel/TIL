@@ -1,4 +1,4 @@
-## Hashcode를 왜 사용하는가?
+## 1. Hashcode를 왜 사용하는가?
 
 ```
 node.hash == hash && (node.key == key || (key != null && key.equals(node.key))
@@ -7,7 +7,7 @@ node.hash == hash && (node.key == key || (key != null && key.equals(node.key))
 hashcode가 같지 않다면 두 객체는 다른 객체이기 때문에 <u>선행검사</u>로 hashcode를 검사한다.
 그렇기 때문에 hashcode를 사용하면 성능상 이점이 있다.
 
-## 만약 eqauls() 만 override 한다면?
+## 2. 만약 eqauls() 만 override 한다면?
 
 만약 아래와 같은 클래스가 있다고 했을 때, index를 기준으로 equals 판단한다고 해보자.
 

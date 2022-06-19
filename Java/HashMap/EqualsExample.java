@@ -1,4 +1,4 @@
-package Java;
+package Java.HashMap;
 
 /*
  * date: 22.06.20

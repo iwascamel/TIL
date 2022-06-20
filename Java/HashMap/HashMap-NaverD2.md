@@ -1,5 +1,7 @@
 # Naver D2 Hashmap
 
+## 1. 도입
+
 과거엔 HashTable을 사용했지만, 현재는 HashTable의 개량 버전으로 HashMap을 주로 사용한다.
 
 `hashmap`의 bucket은 각 객체가 반환하는 `hashCode()`를 기반으로 하고 있다. `hashCode()`는 int형을 기반으로 하기 때문에 다음과 같은 한계가 있다.
@@ -20,11 +22,11 @@ int index = X.hashCode() % M;
 
 > * 이 때 Open Addressing의 방법 중에는 Linear Probing을 주로 사용하는 것 같다.
 
-## Open Addressing의 장점
+## 2. Open Addressing의 장점
 
 Open Addressing의 장점은 연속된 공간에 데이터를 저장하기 때문에 Chaning에 비해 *캐시 효율이 높다* 라는 장점이 있다.하지만 배열이 커질수록 Cache miss의 빈도가 높아지기 때문에 장점이 사라진다.
 
-## Java에서의 방법
+## 3. Java에서의 방법
 
 *Java에서는 chaing을 사용한다.*
 왜냐하면 open addressing - linear probing의 경우 삭제가 효율적이기 어려운데, `remove()` 메서드가 빈번히 호출될 수 있기 때문이다.
@@ -36,13 +38,13 @@ Open Addressing의 장점은 연속된 공간에 데이터를 저장하기 때�
 
 데이터를 2차이로 둔 이유는 1차이로 `add()`와 `remove()`가 반복되면 쓸데없이 자료구조의 변경이 일어날 것을 대비해서이다.
 
-## 해시 버킷의 동적 확장
+## 4. 해시 버킷의 동적 확장
 
 해시 버킷의 개수가 작다면 메모리를 아낄 수 있지만, 데이터가 많아질 경우 충돌이 발생해 비효율적인 상황이 발생할 수 있다.
 그래서 키-값쌍이 일정 수준이상이 되면 버킷의 용량을 2배로 늘린다.
 해시 버킷의 기본 값은 16이고, 임계점에 이를때마다 해시 버킷의 개수를 2배씩 늘린다.
 
-## 보조 해시 함수
+## 5. 보조 해시 함수
 
 ```other
 index = X.hashCode() % M

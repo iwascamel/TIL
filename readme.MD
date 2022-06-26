@@ -14,5 +14,3 @@
 
 - ## Web
   * [CORS](./web/CORS.md)
-
-테스트

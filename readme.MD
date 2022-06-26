@@ -11,3 +11,6 @@
 
 - ## SQL
   * [@테코톡-우기의 MySQL 아키텍쳐](./SQL/테코톡-MySQL아키텍쳐.md)
+
+- ## Web
+  * [CORS](./web/CORS.md)

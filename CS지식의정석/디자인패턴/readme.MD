@@ -2,3 +2,4 @@
 
 * [싱글톤](singleton.md)
 * [DI](./DI.md)
+* [Factory](./factory.md)

@@ -1,4 +1,4 @@
-package Java.HashMap;
+package Java.EqualsAndHashcode;
 
 /*
  * date: 22.06.20

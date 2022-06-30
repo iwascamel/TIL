@@ -2,6 +2,7 @@
 
 - ## Java
   * [HashMap](./Java/HashMap/HashMap.md)
+  * [Eqauls & hascode](./Java/HashMap/EqualsAndHashCode.md)
 
 - ## Git
   * [@테코톡-MergeRebaseCherrypick](./Git/%ED%85%8C%EC%BD%94%ED%86%A1-MergeRebaseCherrypick.md)
@@ -14,3 +15,4 @@
 
 - ## Web
   * [CORS](./web/CORS.md)
+

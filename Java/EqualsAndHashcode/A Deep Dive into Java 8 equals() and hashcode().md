@@ -1,7 +1,7 @@
 ## 1. Hashcode를 왜 사용하는가?
 
-```
-node.hash == hash && (node.key == key || (key != null && key.equals(node.key))
+```java
+node.hash == hash && (node.key == key || (key != null && key.equals(node.key)))
 ```
 
 hashcode가 같지 않다면 두 객체는 다른 객체이기 때문에 <u>선행검사</u>로 hashcode를 검사한다.

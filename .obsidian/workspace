@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "f064150e100648e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b1af31cc9f09f10",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "CS지식의정석/디자인패턴/factory.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "19f0eceeb3479661",
+    "type": "split",
+    "children": [
+      {
+        "id": "005792db38c2de7e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "791c7045f5b6a5c2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "fe23c1d7f30aa6da",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 163
+  },
+  "right": {
+    "id": "0e002d3602d18681",
+    "type": "split",
+    "children": [
+      {
+        "id": "da24482881426e20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41242d31a35aca9e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CS지식의정석/디자인패턴/factory.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6b1af31cc9f09f10",
+  "lastOpenFiles": [
+    "CS지식의정석/디자인패턴/factory.md",
+    "CS지식의정석/디자인패턴/readme.MD",
+    "CS지식의정석/디자인패턴/singleton.md",
+    "CS지식의정석/images/factory1.png",
+    "CS지식의정석/디자인패턴/DI.md",
+    "SQL/테코톡-MySQL아키텍쳐.md",
+    "readme.MD",
+    "web/CORS.md",
+    "Pasted image 20220701205436.png"
+  ]
+}

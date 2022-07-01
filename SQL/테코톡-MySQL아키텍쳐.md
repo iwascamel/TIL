@@ -1,7 +1,6 @@
 # 우기의 MySQL 아키텍쳐
 
 ## 1. 아키텍쳐
-
 <img width="872" alt="image" src="https://user-images.githubusercontent.com/51740388/174826438-404833f6-4dbc-4ddd-bec1-c51c3db51876.png">
 
 * `접속 Client`

@@ -14,7 +14,8 @@ u# DI
 
 ### 그림 예시
 <br/>
-<img width=300 src="./../images/di1.png">
+
+<img width=300 src="../images/di1.png">
 
 ## 의존성 주입의 장점
 

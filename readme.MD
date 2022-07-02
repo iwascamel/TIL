@@ -15,4 +15,3 @@
 
 - ## Web
   * [CORS](./web/CORS.md)
-

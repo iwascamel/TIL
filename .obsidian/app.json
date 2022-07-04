@@ -1,5 +1,8 @@
 {
   "showFrontmatter": false,
   "defaultViewMode": "source",
-  "legacyEditor": false
+  "legacyEditor": false,
+  "promptDelete": false,
+  "autoPairMarkdown": false,
+  "useMarkdownLinks": true
 }

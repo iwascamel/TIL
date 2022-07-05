@@ -1,0 +1,3 @@
+# web
+
+* [cors](./CORS.md)

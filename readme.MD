@@ -6,8 +6,8 @@
 
 # CS
 
-* [java](./Java/readme.md)
-* [git](./Git/readme.md)
-* [sql](./SQL/readme.md)
-* [web](./web/readme.md)
+* [Java](./Java/readme.md)
+* [Git](./Git/readme.md)
+* [SQL](./SQL/readme.md)
+* [Web](./web/readme.md)
 

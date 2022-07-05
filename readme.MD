@@ -8,7 +8,6 @@
 
 * [java](./Java/readme.md)
 * [git](./Git/readme.md)
-* [CS지식의 정석](./CS지식의정석/readme.md)
 * [sql](./SQL/readme.md)
 * [web](./web/readme.md)
 

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CS지식의정석/디자인패턴/readme.MD",
+            "file": "책정리/쉽게-배우는-운영체제/1장-운영체제-개요.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS지식의정석/디자인패턴/readme.MD",
+                "file": "책정리/쉽게-배우는-운영체제/1장-운영체제-개요.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "6b1af31cc9f09f10",
   "lastOpenFiles": [
-    "CS지식의정석/디자인패턴/readme.MD",
+    "책정리/쉽게-배우는-운영체제/1장-운영체제-개요.md",
+    "CS지식의정석/디자인패턴/readme.md",
+    "책정리/하루3분-네트워크-교실/1장-네트워크-기본지식.md",
+    "책정리/하루3분-네트워크-교실/readme.md",
+    "readme.MD",
     "CS지식의정석/디자인패턴/iterator.md",
     "CS지식의정석/디자인패턴/DI.md",
     "CS지식의정석/디자인패턴/factory.md",
     "CS지식의정석/images/di1.png",
-    "Pasted image 20220705044136.png",
-    "Pasted image 20220705044115.png",
-    "CS지식의정석/images/Untitled.md",
-    "CS지식의정석/images/factory1.png",
-    "Java/EqualsAndHashcode/EqualsAndHashCode.md"
+    "Pasted image 20220705044136.png"
   ]
 }

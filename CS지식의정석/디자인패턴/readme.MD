@@ -56,7 +56,7 @@
 * strategy pattern - policy(정책) 이라고도 불린다
 * 캡슐화한 알고리즘을 context 안에서 바꿔주며 상호 교체가 가능하게 하는 패턴이다.
 * 예시) `passport`의 전략 패턴
-  * `passport`?
+  * `passport`? 
     * node.js에서 인증 모듈을 구현할 때 사용하는 라이브러리
 
 ![m1](../images/strategy1.png)

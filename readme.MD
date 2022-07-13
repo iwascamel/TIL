@@ -11,4 +11,6 @@
 * [SQL](./SQL/readme.md)
 * [Web](./web/readme.md)
 
+# Medium
 
+* [이동](./medium/readme.md)

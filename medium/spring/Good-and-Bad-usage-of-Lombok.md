@@ -26,7 +26,7 @@
 
 <hr/>
 
-* [url](https://medium.com/geekculture/good-and-bad-usage-of-lombok-8c8f70874a93)
+* [Good and Bad usage of Lombok](https://medium.com/geekculture/good-and-bad-usage-of-lombok-8c8f70874a93)
 * date
   * 22.07.14
 

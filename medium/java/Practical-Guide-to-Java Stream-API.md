@@ -1,8 +1,5 @@
 # Practical Guide to Java Stream API
 
-> * [본문 link](https://medium.com/praveergupta/practical-guide-to-java-stream-api-7aadc02908f7)
-
-
 ## 1. what is stream?
 
 * Stream API was introduced in Java 8. It provided a **declarative programming** approach to iterate and perform operations over a collection.
@@ -15,3 +12,14 @@
   * 선언형 프로그래밍에서는 개발자는 `what to do`, 어떻게 구현을 하는 지만 집중할 수 있고 `how to do` 는 framework나 언어에 맡긴다.
 
 > [delarative vs imperative 비교 참조](./../others/Declarative-Imperative-Programming.md)
+
+## 2. 연습
+
+> * [map, filtering만 연습](./codes/StreamApiTest220714.java)
+
+
+<hr/>
+
+* [Practical Guide to Java Stream API](https://medium.com/praveergupta/practical-guide-to-java-stream-api-7aadc02908f7)
+* date
+  * 22.07.14

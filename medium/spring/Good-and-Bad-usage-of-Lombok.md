@@ -1,7 +1,5 @@
 # Good and Bad usage of Lombok
 
-> * [url](https://medium.com/geekculture/good-and-bad-usage-of-lombok-8c8f70874a93)
-
 ## 1. what is lombok
 
 * You add some annotations and Lombok generate codes for you at the compile-time.
@@ -28,6 +26,7 @@
 
 <hr/>
 
+* [url](https://medium.com/geekculture/good-and-bad-usage-of-lombok-8c8f70874a93)
 * date
   * 22.07.14
 

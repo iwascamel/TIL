@@ -10,7 +10,7 @@
 
 ### 1-1) 캐시 동작과정 이미지
 
-<img width=500 src="./images/Caching-101_1.png">
+![](./images/Caching-101_1.png)
 
 * 먼저 cache서버로 요청을 보내고, cache miss가 날 경우 db로부터 데이터를 가져온다.
   * 해당 전략은 cache 전략 중 `lazy load` 이거나, `write through`이다.

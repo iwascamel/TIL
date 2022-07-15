@@ -16,6 +16,7 @@
 ## 여러가지
 
 * [선언형(Declarative) vs 명령형(Imperative)](./others/Declarative-Imperative-Programming.md)
+* [인터프리터언어 vs 컴파일언어](./others/Compiled-vs-interpreted-language.md)
 
 ## 동기부여 & 생산성 & 인문
 

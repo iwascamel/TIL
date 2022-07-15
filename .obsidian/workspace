@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "medium/java/java-interview-seires/Java-Developer-Interview-Questions-Series-1.md",
+            "file": "medium/others/Compiled-vs-interpreted-language.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "medium/java/java-interview-seires/Java-Developer-Interview-Questions-Series-1.md",
+                "file": "medium/others/Compiled-vs-interpreted-language.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "6b1af31cc9f09f10",
   "lastOpenFiles": [
+    "medium/others/Compiled-vs-interpreted-language.md",
     "medium/java/java-interview-seires/Java-Developer-Interview-Questions-Series-1.md",
     "medium/spring/Good-and-Bad-usage-of-Lombok.md",
     "medium/readme.md",
@@ -97,7 +98,6 @@
     "medium/java/Practical-Guide-to-Java Stream-API.md",
     "medium/web/Caching-101.md",
     "web/CORS.md",
-    "web/readme.md",
-    "SQL/readme.md"
+    "web/readme.md"
   ]
 }

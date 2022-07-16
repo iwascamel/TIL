@@ -57,7 +57,7 @@
 
 ### 5-1) A Record
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/51740388/179328633-fca44182-4526-474a-8486-1db2d8b14439.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/51740388/179328629-96e2e137-206e-41aa-bbf9-3520c47a7659.png">
 
 * 서버의 도메인을 IP와 직접 연결한다.
 * IP로의 직접 연결한다.
@@ -70,9 +70,8 @@
   * 해당 주소를 도메인에 연결해준다.
 * CNAME같은 경우 한 군데를 더 걸쳐서 속도가 상대적으로 느릴 수 있다.
 
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/51740388/179328633-fca44182-4526-474a-8486-1db2d8b14439.png">
 
-
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/51740388/179328629-96e2e137-206e-41aa-bbf9-3520c47a7659.png">
 
 <hr/>
 

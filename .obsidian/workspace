@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "web/얄코-DNS-ARecord.md",
-            "mode": "preview",
+            "mode": "source",
             "source": false
           }
         }
@@ -90,14 +90,14 @@
   "active": "6b1af31cc9f09f10",
   "lastOpenFiles": [
     "web/얄코-DNS-ARecord.md",
+    "SQL/테코톡-MySQL아키텍쳐.md",
+    "SQL/readme.md",
     "책정리/하루3분-네트워크-교실/2장-신호의-전송과-충돌.md",
     "책정리/하루3분-네트워크-교실/readme.md",
     "readme.MD",
     "medium/readme.md",
     "medium/spring/Good-and-Bad-usage-of-Lombok.md",
     "medium/motivate/I-Spent-1500-Hours-Learning-How-To-Be-Productive.md",
-    "medium/others/Compiled-vs-interpreted-language.md",
-    "medium/others/Declarative-Imperative-Programming.md",
-    "medium/web/Caching-Strategy-101.md"
+    "medium/others/Compiled-vs-interpreted-language.md"
   ]
 }

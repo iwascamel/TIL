@@ -13,7 +13,8 @@
   * IP에 mapping되는 값들을 도메인에 저장한다.
   * 비유로하자면 전화번호부, 도메인 - IP 주소 매핑 정보는 DNS에 있다. 
 
-![얄코-DNS-1 | 400](images/얄코-DNS-1.png)
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/51740388/179328616-b2de1f1a-2d0d-4da6-b7d1-71261b228e43.png">
+
 * 도메인 정보들은 위처럼 다층적 네트워크에 분산돼서 저장되고, 조회된다.
 
 ## 2. www.naver.com를 치면 일어나는 일
@@ -50,13 +51,13 @@
   2. Youtube등 해외 사이트 이용시 더 빠르게 사용하려고 사용한다.
      * 아래 사진과 같이 세팅하면 youtube이용시 더 빠르게 이용이 가능하다.
 
-![얄코-DNS-2 | 300](images/얄코-DNS-2.png)
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/51740388/179328627-ed77a344-2718-43f0-ba22-05537c50fe1c.png">
 
 ## 5. A Record , CNAME
 
 ### 5-1) A Record
 
-![얄코-DNS-3 | 400](images/얄코-DNS-3.png)
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/51740388/179328633-fca44182-4526-474a-8486-1db2d8b14439.png">
 
 * 서버의 도메인을 IP와 직접 연결한다.
 * IP로의 직접 연결한다.
@@ -69,7 +70,9 @@
   * 해당 주소를 도메인에 연결해준다.
 * CNAME같은 경우 한 군데를 더 걸쳐서 속도가 상대적으로 느릴 수 있다.
 
-![얄코-DNS-4 | 400](images/얄코-DNS-4.png)
+
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/51740388/179328629-96e2e137-206e-41aa-bbf9-3520c47a7659.png">
 
 <hr/>
 

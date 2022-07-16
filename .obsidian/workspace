@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "medium/readme.md",
+            "file": "web/얄코-DNS-ARecord.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "medium/readme.md",
+                "file": "web/얄코-DNS-ARecord.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "6b1af31cc9f09f10",
   "lastOpenFiles": [
-    "medium/readme.md",
-    "medium/motivate/I-Spent-1500-Hours-Learning-How-To-Be-Productive.md",
-    "medium/web/Caching-Strategy-101.md",
-    "medium/java/Practical-Guide-to-Java Stream-API.md",
-    "medium/spring/Good-and-Bad-usage-of-Lombok.md",
+    "web/얄코-DNS-ARecord.md",
+    "책정리/하루3분-네트워크-교실/2장-신호의-전송과-충돌.md",
+    "책정리/하루3분-네트워크-교실/readme.md",
     "readme.MD",
+    "medium/readme.md",
+    "medium/spring/Good-and-Bad-usage-of-Lombok.md",
+    "medium/motivate/I-Spent-1500-Hours-Learning-How-To-Be-Productive.md",
     "medium/others/Compiled-vs-interpreted-language.md",
-    "medium/java/java-interview-seires/Java-Developer-Interview-Questions-Series-1.md",
-    "medium/web/Caching-101.md",
-    "web/CORS.md"
+    "medium/others/Declarative-Imperative-Programming.md",
+    "medium/web/Caching-Strategy-101.md"
   ]
 }

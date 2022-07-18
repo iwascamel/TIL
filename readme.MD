@@ -10,6 +10,7 @@
 * [Git](./Git/readme.md)
 * [SQL](./SQL/readme.md)
 * [Web](./web/readme.md)
+* [Algorithm](./algorithm/readme.md)
 
 # Medium
 

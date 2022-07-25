@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "책정리/하루3분-네트워크-교실/2장-신호의-전송과-충돌.md",
+            "file": "책정리/하루3분-네트워크-교실/3장-IP-Addressing.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "책정리/하루3분-네트워크-교실/2장-신호의-전송과-충돌.md",
+                "file": "책정리/하루3분-네트워크-교실/3장-IP-Addressing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "6b1af31cc9f09f10",
   "lastOpenFiles": [
-    "책정리/하루3분-네트워크-교실/2장-신호의-전송과-충돌.md",
+    "책정리/하루3분-네트워크-교실/3장-IP-Addressing.md",
     "책정리/하루3분-네트워크-교실/1장-네트워크-기본지식.md",
+    "책정리/하루3분-네트워크-교실/2장-신호의-전송과-충돌.md",
     "algorithm/시간복잡도를-고려한-코드설계전략.md",
     "CS지식의정석/디자인패턴/readme.md",
     "algorithm/readme.md",
     "책정리/쉽게-배우는-운영체제/1장-운영체제-개요.md",
     "책정리/쉽게-배우는-운영체제/readme.md",
     "readme.MD",
-    "web/얄코-DNS-ARecord.md",
-    "SQL/테코톡-MySQL아키텍쳐.md"
+    "web/얄코-DNS-ARecord.md"
   ]
 }

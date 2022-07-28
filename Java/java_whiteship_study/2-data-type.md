@@ -139,3 +139,26 @@ constructor
 
 ## 4. type casting
 
+### 4-1) 조건
+
+* Primitive type들의 type casting은 모두 서로 변환 가능하다.
+  * 단, 데이터의 손실이 발생한다.
+* Reference type은 상속관계여야만 서로 변환이 가능하다.
+
+### 4-2) reference type 조건
+
+> * [DownCasting 예제 및 활용법](./chap2_codes/UpDownCasting.java)
+
+* 부모 클래스에는 명시적인 type casting 없이 자식 인스턴스를 넣을 수 있다.
+  * 이는 부모보다 자식 인스턴스의 영역(크기)이 더 크므로 가능하다.
+    * 즉, 부모에서 어떤 멤버변수나 메서드를 참조해도 자식 인스턴스내에 선언돼있기 때문에 참조가 가능하다.
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/51740388/181522055-b061916d-bdb9-4662-b799-017332c24d47.png">
+
+* 하지만 반대의 경우 자식 클래스의 범주가 더 클 경우 부모 인스턴스로는 대체가 되지 않는다.
+  * 다운 캐스팅은 Paremeter에 부모type으로 argument를 받을 때, 해당 instance를 다시 자식으로 돌릴 때 주로 사용한다.
+
+* Up
+  * 자식 to 부모 (올라간다)
+* Down
+  * 부모 to 자식 (내려간다)

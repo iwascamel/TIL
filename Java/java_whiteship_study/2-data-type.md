@@ -109,6 +109,14 @@ public Car(String color) {
 * class 초기화 블럭 -> 인스턴스 블럭 -> 생성자 순으로 실행된다.
   * class 초기화 블럭의 경우 메모리에 처음 로딩될 때 딱 한 번만 초기화 실행이 이뤄지는 것을 볼 수 있다.
 
+* 위 예제의 경우
+  * static
+  * instance
+  * constructor
+  * instance
+  * constructor
+* 가 출력
+
 ### 2-5) 초기화 블록의 사용
 
 > * [생성 예제](./chap2_codes/StaticBlockTest.java)

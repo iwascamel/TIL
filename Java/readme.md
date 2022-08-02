@@ -6,5 +6,5 @@
 
 ## 주제별 모으기
 
-* [HashMap](./HashMap/HashMap.md)
-* [Eqauls & hascode](./EqualsAndHashcode/readme.md)
+* [HashMap](./여러가지/HashMap/HashMap.md)
+* [Eqauls & hascode](./여러가지/EqualsAndHashcode/readme.md)

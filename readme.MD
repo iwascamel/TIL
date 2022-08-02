@@ -10,8 +10,8 @@
 * [Java](./Java/readme.md)
 * [Git](./Git/readme.md)
 * [SQL](./SQL/readme.md)
-* [Web](./web/readme.md)
 * [Algorithm](./algorithm/readme.md)
+* [Web & 곁가지 지식들](./web/readme.md)
 
 # Medium
 

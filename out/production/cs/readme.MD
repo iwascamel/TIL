@@ -1,10 +1,19 @@
+# 책 & 강좌 정리
+
+* [하루3분 네트워크 교실](./책정리/하루3분-네트워크-교실/readme.md)
+* [쉽게 배우는 운영체제](./책정리/쉽게-배우는-운영체제/readme.md)
+* [CS 지식의 정석](./강좌정리/CS지식의정석/readme.md)
+* [Practical Modern Java](./책정리/practical_modern_java/readme.MD)
+* [자바 개발자를 위한 kotlin 입문](./강좌정리/코틀린입문/readme.md)
+
 # CS
 
-- ## Java
-  * [HashMap](./Java/HashMap/HashMap.md)
+* [Java](./Java/readme.md)
+* [Git](./Git/readme.md)
+* [SQL](./SQL/readme.md)
+* [Algorithm](./algorithm/readme.md)
+* [Web & 곁가지 지식들](./web/readme.md)
 
-- ## Git
-  * [@테코톡-MergeRebaseCherrypick](./Git/%ED%85%8C%EC%BD%94%ED%86%A1-MergeRebaseCherrypick.md)
+# Medium
 
-- ## CS지식의 정석
-  * [디자인패턴](./CS%EC%A7%80%EC%8B%9D%EC%9D%98%EC%A0%95%EC%84%9D/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/readme.MD)
+* [이동](./medium/readme.md)

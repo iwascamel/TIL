@@ -1,0 +1,9 @@
+{
+  "showFrontmatter": false,
+  "defaultViewMode": "preview",
+  "legacyEditor": false,
+  "promptDelete": false,
+  "autoPairMarkdown": false,
+  "useMarkdownLinks": true,
+  "livePreview": true
+}

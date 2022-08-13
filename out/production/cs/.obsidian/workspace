@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "f064150e100648e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b1af31cc9f09f10",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "책정리/하루3분-네트워크-교실/3장-IP-Addressing.md",
+            "mode": "preview",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "19f0eceeb3479661",
+    "type": "split",
+    "children": [
+      {
+        "id": "005792db38c2de7e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "791c7045f5b6a5c2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "fe23c1d7f30aa6da",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 257
+  },
+  "right": {
+    "id": "0e002d3602d18681",
+    "type": "split",
+    "children": [
+      {
+        "id": "da24482881426e20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41242d31a35aca9e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "책정리/하루3분-네트워크-교실/3장-IP-Addressing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6b1af31cc9f09f10",
+  "lastOpenFiles": [
+    "책정리/하루3분-네트워크-교실/3장-IP-Addressing.md",
+    "책정리/하루3분-네트워크-교실/2장-신호의-전송과-충돌.md",
+    "책정리/하루3분-네트워크-교실/1장-네트워크-기본지식.md",
+    "algorithm/시간복잡도를-고려한-코드설계전략.md",
+    "CS지식의정석/디자인패턴/readme.md",
+    "algorithm/readme.md",
+    "책정리/쉽게-배우는-운영체제/1장-운영체제-개요.md",
+    "책정리/쉽게-배우는-운영체제/readme.md",
+    "readme.MD",
+    "web/얄코-DNS-ARecord.md"
+  ]
+}

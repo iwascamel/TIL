@@ -52,6 +52,7 @@
 * merge가 합치는 거라면, rebase는 대상 가지들을 옮겨주는 것이다.
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/184504258-5be2dd25-014a-4d42-8b05-bf60a42aa5ee.png">
+
 * 노란색이 merge를 했을 때, 보라색은 rebase를 했을 때를 보여준다.
 * rebase를 한 뒤 commit log는 한 줄로 깔끔하게 정리가 되지만, merge는 branch의 log를 남긴다.
 	* merge는 끝에만 모아서 병합을 하니까 잔가지가 남는다.

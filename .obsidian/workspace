@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "강좌정리/얄코git강좌/섹션2-branch.md",
+            "file": "강좌정리/얄코git강좌/섹션3-github.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "강좌정리/얄코git강좌/섹션2-branch.md",
+                "file": "강좌정리/얄코git강좌/섹션3-github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,8 +89,8 @@
   },
   "active": "6b1af31cc9f09f10",
   "lastOpenFiles": [
-    "강좌정리/얄코git강좌/readme.md",
     "강좌정리/얄코git강좌/섹션2-branch.md",
+    "강좌정리/얄코git강좌/readme.md",
     "강좌정리/코틀린입문/섹션별readme모음/섹션2-변수와타입.md",
     "강좌정리/코틀린입문/섹션별readme모음/섹션1-도입.md",
     "강좌정리/얄코git강좌/섹션1-git기본.md",

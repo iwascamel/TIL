@@ -2,3 +2,4 @@
 
 * [섹션1-git기본](./섹션1-git기본.md)
 * [섹션2-branch](./섹션2-branch.md)
+* [섹션3-github](./섹션3-github.md)

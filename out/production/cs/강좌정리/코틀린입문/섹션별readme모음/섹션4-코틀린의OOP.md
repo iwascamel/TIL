@@ -2,14 +2,15 @@
 
 ## 1. class
 
-* [class, 생성자](../codes/section4/Sec4_1_1.kt)
+* [class, 생성자](../codes/section4/Sec4_1_2_constructorOverloading.kt)
 
 ### 1-1) class, property
 
 * property란
     * field + getter + setter
 
-* kotlin에서는 field만 만들면 getter, setter를 자동으로 생성해준다.
+* kotlin에서는 val, var등을 통해 field만 만들면 getter, setter를 자동으로 생성해준다.
+    * 때문에 주 생성자에 들어가는 parameter들을 property라고 부른다.
 * kotlin에서는 생성자에서 property를 만들 수 있다.
     * java코드를 가져오더라도 `person.getName()`이 아니라, `person.name`만 치더라도 가져와진다.
 
@@ -51,7 +52,65 @@ class Person(val name:String, var age: Int)
     * 부 생성자는 최종적으로 주 생성자를 this로 호출해야 한다.
     * 부 생성자는 body를 가질 수 있다.
 
+* 만약 두번째 부 생성자를 호출한다고 해보자.
+    * [코드참조](../codes/section4/Sec4_1_2_constructorOverloading.kt)
+
+```
+초기 생성자
+첫번째 부 생성자
+두번째 부 생성자
+```
+
+* 그러면 init -> 첫번째 부 생성자 -> 두번째 부 생성자가 호출된다.
+    * 즉, 역순으로 호출된다.
+* 그런데 kotlin에서는 부생성자보다는 default parameter를 권장한다.
+
+```kotlin
+class Person(
+    val person: String = "임얼쑤",
+    var age: Int = 1
+)
+```
+
+* 만약 converting과 같이 어떤 객체를 다른 객체로 바꾸는 경우에는 부 생성자를 사용할 수는 있지만, 그보다는 정적 팩토리 메서드가 추천된다.
+    * 사실상 부 생성자는 거의 사용할 일이 없다.
+
 ### 1-3) custom getter, setter
+
+* [getter를 property로 반환하는 방법](../codes/section4/Sec4_1_3_getterSetting.kt)
+    * 객체의 속성이라면 custom getter
+        * 그렇지 않다면 함수를 사용하자.
+        * ex) isAdult => 해당 사람이 성인인가라는 속성을 확인하는 것처럼 보인다.
+            * 이 때는 custom getter가 활용되는 프로퍼티처럼 보이게 하는 게 좋다.
+
+* [custom getter 만들기](../codes/section4/Sec4_1_3_customGetter.kt)
+    * `class Person(val name:String)` 으로 설정하면 getter를 자동으로 만들어주므로, val을 선언해주지 말자.
+    * field 사용 이유
+        * 만약 get() = name.uppercase()를 사용하게 되면, name을 부르면 get()을 호출하고, get()은 다시 name(name에 대한 getter를 호출)을 호출하므로 무한루프에 빠진다.
+        * 그래서 자기 자신을 가르키는 field라는 예약어가 생겼다.
+            * field를 지칭하면 진짜 name을 가르킨다.
 
 ### 1-4) backing field
 
+* 1-3)의 field를 자기 자신을 가르키는 보이지 않는 field라고 해서 backing field라고 부른다.
+    * 그러나 custom getter에서 backing field를 사용하는 일은 드물었다.
+    * 왜냐하면 진짜 property에 대해서 getter를 만들어줄 때 사용한다.
+    * [함수를 만들어서 return 하는 방법 & setter 설정](../codes/section4/Sec4_1_4_backingField.kt)
+
+* setter에서 field는 유효하게 사용될 수 있으나, setter 자체가 잘 사용되지 않으니 backing field자체가 잘 사용되지 않는다.
+
+## 2. 상속
+
+### 2-1) 추상 클래스
+
+* [abstract](../codes/section4/Sec4_2_1_abstract.kt)
+
+### 2-2) 인터페이스
+
+* [interface](../codes/section4/Sec4_2_2_interface.kt)
+
+### 2-3) 클래스를 상속할 때 주의할 점
+
+
+
+### 2-4) 

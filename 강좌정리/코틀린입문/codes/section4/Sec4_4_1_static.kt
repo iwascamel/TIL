@@ -29,7 +29,8 @@ class PersonV5 private constructor(
         var name: String,
         var age: Int
 ){
-    // Factory -> 이름붙임
+    // Factory라는 이름을 붙여보자.
+    // 즉, class처럼 이름을 붙일 수 있다.
     companion object Factory : Log{
         private const val MIN_AGE = 1
         fun newBaby(name: String) : PersonV5 {

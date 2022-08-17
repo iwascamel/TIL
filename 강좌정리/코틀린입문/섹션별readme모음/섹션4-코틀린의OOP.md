@@ -220,6 +220,8 @@ public abstract class StringUtils{
 ### 4-1) static 함수와 변수
 
 * static
+    * [static v1](../codes/section4/Sec4_4_1_static.kt)
+    * [static v2](../codes/section4/Sec4_4_1_staticV2.kt)
     * 클래스가 인스턴스화 될 때 새로운 값으로 복제되는 것이 아니라, 정적인 영역에서 값이 공유된다.
 * companion object
     * 클래스와 동행하는 유일한 오브젝트

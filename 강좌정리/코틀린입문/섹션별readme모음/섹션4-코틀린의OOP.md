@@ -215,3 +215,90 @@ public abstract class StringUtils{
     * 즉, java코드에서는 kotlin 모듈의 internal코드를 가져올 수 있다.
 * java는 같은 패키지의 kotlin protected 멤버에 접근할 수 있다.
 
+## 4. kotlin에서 object키워드를 다루는 방법
+
+### 4-1) static 함수와 변수
+
+* static
+    * 클래스가 인스턴스화 될 때 새로운 값으로 복제되는 것이 아니라, 정적인 영역에서 값이 공유된다.
+* companion object
+    * 클래스와 동행하는 유일한 오브젝트
+
+* companion object는 하나의 객체로 간주된다.
+    * 때문에 이름을 붙일 수도 있고, 인터페이스를 구현할 수도 있다.
+* companion object에 유틸성 함수들을 넣어도 되지만, 최상단 파일을 활용하는 것이 추천된다.
+* java에서 kotlin companion object를 사용하려면 @JvmStatic을 붙여주어야 한다.
+
+### 4-2) 싱글톤
+
+* [object Singleton](../codes/section4/Sec4_4_2_singleton.kt)
+    * object만 붙여주면 된다.
+    * 그러나 object를 붙여서 싱글톤을 사용할 일은 거의 없다.
+
+### 4-3) 익명 클래스
+
+* [anonymous](../codes/section4/Sec4_4_3_anonymous.kt)
+
+## 5. 중첩클래스
+
+### 5-1) 중첩 클래스의 종류
+
+#### java
+
+* static을 사용하는 중첩클래스
+* static을 사용하지 않는 중첩클래스
+    * inner class
+    * local class
+    * anonymous class
+
+<img width="507" alt="image" src="https://user-images.githubusercontent.com/51740388/185149228-fe4f7d27-8386-4d44-9c9d-ced092031820.png">
+
+* class 내부 non-static class는 외부 클래스에 대한 직접 참조를 갖고 있고, static class는 외부 클래스에 대한 직접 참조가 없다.
+    * 이펙티브 자바 item 24, 86
+        * 내부 클래스는 숨겨진 외부 클래스 정보를 갖고 있어, 참조를 해지 못하는 경우 메모리 누수가 생길 수 있고 디버깅이 어렵다
+        * 내부 클래스의 직렬화 형태가 명확하게 정의돼 있지 않아 직렬화에 있어 제한이 있다.
+        * 그래서 내부 클래스를 사용할 때는 static 키워드를 사용하라.
+            * 코틀린은 해당 가이드를 충실히 따르고있다.
+
+### 5-2) 코틀린의 중첩 클래스와 내부 클래스
+
+* [중첩클래스와 내부클래스](../codes/section4/Sec4_5_2_anonymousClass.kt)
+
+## 6. 코틀린에서 다양한 클래스를 다루는 방법
+
+### 6-1) Data Class
+
+* dto, data(field), 생성자와 getter, equals and hashCode, toString 등
+
+* [data class](../codes/section4/Sec4_6_1_dataClass.kt)
+    * named argument까지 활용하면 builder패턴까지 활용하는 이점을 누린다.
+
+### 6-2) Enum Class
+
+* java
+    * 추가적인 클래스를 상속받을 수 없다.
+    * 각 코드는 싱글톤이다
+        * ex) `KOREA("KO")`
+    * 인터페이스는 구현할 수 있다.
+
+* [kotlin enum](../codes/section4/Sec4_6_2_enum.kt)
+    * enum의 경우 이미 컴파일 타임에 enum의 개수를 알고 있기 때문에 else를 작성하지 않아도 된다.
+    * 만약 else를 작성하지 않았는데, enum class에 더 멤버변수가 남아있다면 warning을 발생시켜준다.
+
+### 6-3) Sealed Class, Sealed Interface
+
+* 문제상황
+    * 상속이 가능하도록 추상클래스를 만들까 했는데, 외부에서는 이 클래스를 상속받지 않았으면 좋겠다.
+    * 그러면 하위 클래스를 봉인하자.
+* Sealed class
+    * 컴파일 타임 때 하위 클래스 타입을 모두 기억한다.
+    * 즉, 런타임 때, 클래스 타입이 추가될 수 없다.
+    * 하위 클래스는 같은 패키지 내에 있어야 한다.
+    * Enum과의 차이
+        * 클래스를 상속받을 수 있다.
+        * 하위클래스는 멀티 인스턴스가 가능하다.
+
+* [Sealed class](../codes/section4/Sec4_6_3_sealedClass.kt)
+* when expression을 활용할 때 강점을 발휘한다.
+    * 추상화가 필요한 Entity나 DTO에는 sealed class를 적용하면 좋다.
+    * JDK17에도 sealed class가 추가됐다.

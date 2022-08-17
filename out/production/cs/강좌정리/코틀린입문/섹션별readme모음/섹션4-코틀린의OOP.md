@@ -111,6 +111,130 @@ class Person(
 
 ### 2-3) 클래스를 상속할 때 주의할 점
 
+* [주의점](../codes/section4/Sec4_2_3_waringPoint.kt)
+    * 상위 클래스에서 하위 클래스가 override하고 있는 property를 생성자 블록이나 init블록을 쓰게 되면 이상한 값(쓰레기값)이 나올 수 있다.
+    * 상위 클래스를 설계할 때는 생성자 또는 초기화 블록에 사용되는 property에는 open을 반드시 피해야 한다.
+
+* 상속 관련 키워드 4가지
+    * final
+        * override를 막는다.
+        * default값
+    * open
+        * override를 열어준다.
+    * abstarct
+        * 반드시 override 해야한다.
+    * override
+        * override를 하고 있다.
 
 
-### 2-4) 
+## 3. 코틀린에서 접근제어를 다루는 방법
+
+### 3-1) 자바와 코틀린의 가시성 제어
+
+#### java
+
+* public
+    * 모든 곳
+* protected
+    * 같은 패키지 + 하위 클래스
+* default
+    * 같은 패키지
+* private
+    * 같은 클래스
+
+#### kotlin
+
+* public
+    * 모든 곳
+* protected
+    * 같은 패키지 x
+        * 코틀린에서는 package를 namespace를 관리하기 위한 용도로만 사용한다.
+        * 즉, 가시성 제어에는 사용되지 않는다.
+            * 가시성 제어 : [같은 패키지안에 있으니까 너네는 소통할 수 있어]
+    * 선언된 클래스 + 하위 클래스
+* internal
+    * 같은 모듈에서만 접근 가능
+        * 모듈
+            * 한 번에 컴파일 되는 kotlin 코드
+            * ex) gradle -> gradle source set
+                * 즉, gradle에서 만든 프로젝트
+    * 상위 모듈과 하위 모듈이 있을 때, 하위 모듈에 있는 internal이 붙은 클래스나 함수를 상위 모듈에서 가져오지 못한다.
+* private
+    * 선언된 클래스에서만 가능
+
+* 요약하면 public, private은 똑같다.
+    * protected에서는 package 제거
+    * default는 빠지고 internal
+        * internal에서는 모듈을 제어하는 기능이 생겼다.
+
+* java의 기본 접근 지시어
+    * default
+* kotlin의 기본 접근 지시어
+    * public
+
+* kotlin에서는 .kt파일에 변수, 함수, 클래스를 여러 개를 만들 수 있다.
+
+### 3-2) 코틀린 파일의 접근 제어
+
+* public
+* protected
+    * 파일에는 사용할 수 없다.
+* internal
+    * 같은 모듈에서만 접근 가능
+* private
+    * 같은 파일내에서만 접근 가능
+
+### 3-3) 다양한 구성요소의 접근 제어
+
+* 클래스, 생성자, 프로퍼티
+* 클래스 안의 멤버
+    * 클래스의 범위와 똑같다.
+* 생성자
+    * 생성자의 접근 지시어를 붙이려면, constructor를 써주어야 한다.
+    * [range](../codes/section4/Sec4_3_3_range.kt)
+
+#### 유틸성 코드
+
+* abstract class + private constructor
+
+```java
+public abstract class StringUtils{
+    private StringUtils(){}
+    public boolean isDirectoryPath(String path){
+        return path.endsWith("/");
+    }
+}
+```
+
+* [kotlin에서 utils](../codes/section4/Sec4_3_3_utils.kt)
+* [접근 지시어 설정](../codes/section4/Sec4_3_3_rangeV2.kt)
+
+### 3-4) java와 kotlin을 함께 사용할 경우 주의점
+
+* internal은 byte code상 public이 된다.
+    * 즉, java코드에서는 kotlin 모듈의 internal코드를 가져올 수 있다.
+* java는 같은 패키지의 kotlin protected 멤버에 접근할 수 있다.
+
+## 4. kotlin에서 object키워드를 다루는 방법
+
+### 4-1) static 함수와 변수
+
+* static
+    * 클래스가 인스턴스화 될 때 새로운 값으로 복제되는 것이 아니라, 정적인 영역에서 값이 공유된다.
+* companion object
+    * 클래스와 동행하는 유일한 오브젝트
+
+* companion object는 하나의 객체로 간주된다.
+    * 때문에 이름을 붙일 수도 있고, 인터페이스를 구현할 수도 있다.
+* companion object에 유틸성 함수들을 넣어도 되지만, 최상단 파일을 활용하는 것이 추천된다.
+* java에서 kotlin companion object를 사용하려면 @JvmStatic을 붙여주어야 한다.
+
+### 4-2) 싱글톤
+
+* [object Singleton](../codes/section4/Sec4_4_2_singleton.kt)
+    * object만 붙여주면 된다.
+    * 그러나 object를 붙여서 싱글톤을 사용할 일은 거의 없다.
+
+### 4-3) 익명 클래스
+
+* 

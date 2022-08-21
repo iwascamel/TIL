@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "강좌정리/코틀린입문/섹션별readme모음/섹션4-코틀린의OOP.md",
-            "mode": "source",
+            "file": "강좌정리/코틀린입문/섹션별readme모음/섹션6-코틀린특성.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "강좌정리/코틀린입문/섹션별readme모음/섹션4-코틀린의OOP.md",
+                "file": "강좌정리/코틀린입문/섹션별readme모음/섹션6-코틀린특성.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,8 @@
   },
   "active": "6b1af31cc9f09f10",
   "lastOpenFiles": [
+    "강좌정리/코틀린입문/섹션별readme모음/섹션5-코틀린의FP.md",
+    "강좌정리/코틀린입문/섹션별readme모음/섹션4-코틀린의OOP.md",
     "강좌정리/얄코git강좌/섹션4-git동작원리.md",
     "강좌정리/얄코git강좌/섹션3-github.md",
     "강좌정리/얄코git강좌/섹션2-branch.md",
@@ -96,8 +98,6 @@
     "강좌정리/코틀린입문/섹션별readme모음/섹션2-변수와타입.md",
     "강좌정리/코틀린입문/섹션별readme모음/섹션1-도입.md",
     "강좌정리/얄코git강좌/섹션1-git기본.md",
-    "책정리/하루3분-네트워크-교실/3장-IP-Addressing.md",
-    "책정리/하루3분-네트워크-교실/2장-신호의-전송과-충돌.md",
-    "책정리/하루3분-네트워크-교실/1장-네트워크-기본지식.md"
+    "책정리/하루3분-네트워크-교실/3장-IP-Addressing.md"
   ]
 }

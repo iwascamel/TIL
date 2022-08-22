@@ -53,30 +53,39 @@ logs/**/debug.log
 ## 3. Reset, Revert
 
 ### 3-1) Reset
+
 * 과거의 값을 아예 지워버린다.
+
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/51740388/184501554-c80f4d24-aaa0-41a5-85cf-6e06f4907952.png">
 
 ### 3-2) Revert
+
 * 반대의 값을 수행하는 캡슐을 묻어놓는 개념이다.
 	* 협업시 한번 공유가 된 코드들에 대해서 코드를 되돌릴려면 무조건 revert를 사용해야 한다.
+
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/51740388/184501578-bbbe0c7b-f979-402e-88de-9755bda126a0.png">
 
 * 만약 과거 시점의 한 코드만 수정하고 싶다면, revert를 사용하면 좋다.
+
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/51740388/184501615-f752b8fe-505b-4c4c-8345-f47f350e1380.png">
 
 ### 3-3) revert 실습
+
 * .git 파일 백업해두기
 	* command + shift + . 하면 숨김파일 볼 수 있다.
 
 #### reset
+
 * git reset --hard (돌아갈 커밋 메세지 한 6자정도까지)
 * git reset --hard
 	* 뒤에 커밋메세지가 없다면 마지막 커밋을 head로 가르킨다.
 
 #### revert
+
 * git revert (커밋메시지)
 * revert를 하면 아래와 같이 메세지가 생성된다.
 	* 특별한 경우가 아니면 해당 메세지를 손 볼 이유는 없다.
+
 ```
 Revert "Add George to Tigers"
 
@@ -84,18 +93,24 @@ This reverts commit 176c010a51fb8991a13e66f3d17b27b5a90da51e.
 ```
 
 * source tree로 보면 commit 메세지를 반대로 실행하는 커밋이 하나 생성된 것을 볼 수 있다.
+
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/184501956-335feafc-da7f-4575-85d5-f607895b536a.png">
+
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/184501995-6f0a3427-cc52-4f4e-bafa-4c8432c4638f.png">
+
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/184502001-55750ee9-5781-4ef8-8f2e-e92d543aca8f.png">
+
 * 두 커밋 내역을 비교해보면, revert에서 원래 commit에 추가된 내용을 반대로 실행하는 것을 볼 수 있다.
 
 ### 3-4) revert 충돌
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/184502100-0d03fd29-c88e-4e83-b204-a6bdcdd8a193.png">
+
 * replace lions with lepards로 돌아가려 한다고 해보자.
 	* leopards는 추가, lions는 삭제, tigers는 수정됐다.
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/184502141-96ef5bfa-f36f-47cb-bb31-7199fde57d02.png">
+
 * 해당 커밋(replace lions with lepards)보다 상위 커밋인 replace cheetas with panthers에서 leopards를 수정했다.
 	* 고로 충돌이 생긴다.
 
@@ -108,6 +123,7 @@ This reverts commit 176c010a51fb8991a13e66f3d17b27b5a90da51e.
 	* 예제에서는 일단 revert 전으로 reset해준다.
 
 ### 3-5) commit하지 않고 revert하기
+
 * git revert --no-commit (되돌릴 커밋 해시)
 	* revert를 하면 자동으로 commit이 생성되는데, 위 명령어를 이동하면 commit이 되지 않으므로 어떤 변화를 수행하고 같이 commit을 하려고 할 때 위 명령어를 활용하면 된다.
 	* 취소하려면 git reset --hard 을 하면 된다.

@@ -1,7 +1,6 @@
 # 섹션 4 git 동작원리
 
 ## 1. VCS로서 git의 장점
-
 ### 1-1) snapshot을 사용한다.
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/51740388/184878797-7ee2a631-7acf-4125-80b6-41afa281fd16.png">
@@ -11,7 +10,6 @@
     * 이 때의 단점은 각 파일이 만들어진 시점부터 해서 변경사항들을 모두 더해서 현재 내용을 계산해내야 하므로 commit이 많아질수록 느려진다.
 * 스냅샷 방식
     * 현 시점에 모든 파일들이 모두 차 있으므로, 빠르다.
-
 ### 1-2) 중앙 집중식이 아닌, 분산 버전 관리 시스템이다.
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/184879288-1a982e9f-65ff-451b-b472-6cf602aa2579.png">
@@ -90,3 +88,115 @@
     * 그 자체를 지워버린다.
     * working directory까지 지워버린다.
     * 가장 과격한 방법이다.
+
+## 3. head
+
+### 3-1) git checkout^
+
+* head
+	* 현재 속한 branch의 가장 최신 커밋
+	* 이 때, 무조건 끝에 있는 게 아니라, 해당 branch의 마지막 커밋이라는 것이 중요하다.
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/51740388/185922274-dc5f34f2-d42f-47ca-80ac-3102257a76c0.png">
+
+* 즉 위의 경우, main은 head에 있지만 delta-branch보다 뒤에 있다.
+
+* checkout
+	* 파일들의 상태는 바꾸지 않고 해당 커밋지점으로 이동하는 것
+* git checkout^^
+	* ^ 나 ~ 개수만큼 뒤로 checkout을 한다.
+
+<img width="591" alt="image" src="https://user-images.githubusercontent.com/51740388/185923911-e365d6d0-7d79-4650-b0ae-b8293bf0249e.png">
+
+* delta-branch의 head에서 `git checkout~~` 을 하면, 위와 같이 된다.
+
+* git checkout -
+	* ctrl z와 같이 동작한다.
+* 그런데 head는 해당 브랜치의 가장 앞 브랜치인데, head라고 표시돼 있다.
+	* 그 이유는, 새로운 branch를 생성해서, 그 branch의 가장 앞에 존재하기 때문이다.
+		* 즉, 해당 커밋에서 갈라진, 그러나 이름이 아직 붙여지지 않은 새로운 branch에 위치해 있는 것이다.
+	* 만약 가장 delta-branch의 가장 앞으로 가고 싶다면 git switch delta-branch를 하면 된다.
+
+### 3-2) 분기
+
+<img width="660" alt="image" src="https://user-images.githubusercontent.com/51740388/185924877-e6639902-25a8-4a8f-bbe1-44ed7e39e546.png">
+
+* 만약에 beta-branch의 head 이전에 분기를 만들고 싶다고 해보자.
+* git checkout beta-branch
+* git checkout head~
+* git switch -c gamma-branch
+* 파일 수정
+* git commit -am 'gamma 1st commit'
+
+### 3-3) 분기2
+
+* 만약 2단계 전으로 reset을 시키고 싶다면?
+	* git reset --hard head~2
+
+## 4. fetch & pull
+
+* fetch
+	* remote(원격저장소)의 최신 commit을 로컬로 가져오기만 한다.
+* pull
+	* fetch + merge or rebase
+	* default는 merge다.
+
+* 그래서 main - origin/main이 있다고 했을 때, git fetch만 받아온다.
+	* 그리고, git checkout origin/main을 한 다음에 해당 코드들을 돌려보고 이후 merge를 해줘도 된다.
+
+* git switch -t origin/new-branch
+	* -t
+		* trace option
+	* 원격에도 new-branch가 생성되고, 원격 origin/new-branch와 같게 trace한다.
+	* 또한, -t가 -u와 같이 작동한다?
+		* 그래서 commit들을 앞으로 주고받을 수 있게 된다.
+
+## 5. git help & 각종 설정
+
+### 5-1) git help
+
+* git help
+	* 기본적인 명령어들
+* git help -a
+	* 모든 명령어들
+* git commit -h 를 입력하면 뒤에 어떤 option이 있는 지 볼 수 있다.
+* git help commit
+	* commit에 대한 help를 볼 수 있다.
+	* 웹에서 열고 싶으면 -w를 붙여주자.
+* git branch --help
+
+### 5-2) git config
+
+* config를 --global로 설정하면 전역으로 설정된다.
+* git config --global user.name
+	* 현재 global로 설정돼 있는 유저네임 출력
+	* 만약 이름을 새로 설정해주고 싶다면, git config --global user.name (이름)
+* 만약 현재 폴더에서만 다른 이름을 설정해주고 싶다면
+	* git config user.name (이름)
+* git config --list
+	* 현재 프로젝트의 설정값들을 볼 수 있다.
+* git config --global --list
+	* 글로벌 설정들만 보여준다.
+* git config -e
+	* editor안에서 열리게 해준다.
+	* git config --global core.editor "code --wait"
+		* vim은 불편하니, vsc code를 default값으로 설정해서 vsc로 열 수 있게 해준다.
+		* --wait
+			* 에디터를 수정하는 동안 CLI를 정지
+
+* 줄바꿈 호환문제 해결
+	* git config --global core.autocrlf (윈도우: true / 맥: input)
+		* 엔터를 하는 방식이 윈도우랑 맥이 다르다.
+* pull 기본전략
+	* git config pull.rebase (true/false)
+		* true면 rebase, false면 merge
+* git config --global init.defaultBranch main
+	* main을 기본 브랜치로 설정
+* -u 옵션
+	* 현재의 local branch를 remote의 어떤 브랜치와 연결할 지에 대한 옵션
+	* (혹은 --set-upstream)
+* 현재의 로컬 브랜치를 그냥 원격 브랜치에 적용하려고 할 때
+	* git config --global push.default current
+* 단축키 설정
+	* git config --global alias.단축키 "명령어"
+		* ex) git config --global alias.cam "commit -am"

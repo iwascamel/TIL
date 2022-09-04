@@ -92,7 +92,7 @@ Closes #125
 * git stash branch (브랜치명)
 	* 새로 생성한 브랜치에 pop을 한다.
 
-## 5. 커밋 수정하기
+## 5. 커밋 수정하기 : rebase -i
 
 * git commit --amend
 	* 마지막 커밋 메세지 변경
@@ -102,3 +102,88 @@ Closes #125
 	* 그리고 git commit --amend로 마지막 커밋에 포함시키면 된다.
 * git commit --amend -m 'Add members to Panthers and Pumas'
 	* 한줄로는 위와 같이 변경할 수도 있다.
+
+## 6. 과거의 커밋 수정 및 병합하기
+
+### 6-1) 문제 상황
+
+<img width="416" alt="image" src="https://user-images.githubusercontent.com/51740388/188310693-461bcf44-f9d7-4e26-83e0-a8bd87810520.png">
+
+* 현재 상황
+	* 횻홍
+		* 커밋이름 다시 입력해줘야 한다.
+	* 뻘짓
+		* 해당 커밋은 지우고 싶다.
+	* 결전~ 커밋들
+		* 두 개 커밋을 합치고 싶다.
+
+### 6-2) git rebase -i : 커밋 내역 수정
+
+* git rebase -i
+	* 수정이 필요한 대상 **바로 이전** 커밋을 해준다. 
+	* 예를 들어, `횻홍`을 수정해줄 거면 `주인공 필살기 궁둥의 권` 추가 의 commit으로 rebase -i를 해준다.
+
+<img width="505" alt="image" src="https://user-images.githubusercontent.com/51740388/188310778-5994639d-7cfc-40e6-89dd-62f69acaaaac.png">
+
+<img width="580" alt="image" src="https://user-images.githubusercontent.com/51740388/188310870-4adfdc4c-29c9-4336-91f3-319ad128e75f.png">
+
+* 그러면 위와 같은 화면이 뜨게 된다.
+* 해당 pick을 어떻게 수정하고, 저장하느냐에 따라서 각 commit에 대해서 뭘 할지를 지정하는 것이다.
+
+<img width="249" alt="image" src="https://user-images.githubusercontent.com/51740388/188310907-e55efaa9-c547-414d-9d4b-1c4a9bb9b930.png">
+
+* squash
+	* 이전 커밋에가 아니라, 이전 커밋과 합치기가 좀 더 정확한 말 같다.
+
+* 횻홍만 `r 1c799ad 횻홍` r로 바꿔보자.
+	* 그리고 :wq!
+
+<img width="573" alt="image" src="https://user-images.githubusercontent.com/51740388/188310965-350d76c7-9954-4c4c-b4ce-2c2a141d09b0.png">
+
+* 그러면 위와 같은 화면이 뜨게 된다.
+	* 해당 commit내용을 버그수정으로 바꿔주자.
+
+<img width="338" alt="image" src="https://user-images.githubusercontent.com/51740388/188310981-1285330a-e41f-4829-ba78-78f0b8269d6e.png">
+
+### 6-3) git rebase -i : 커밋 삭제, 커밋 합치기
+
+* 이제 버그수정 다음 것부터 수정할거니까, 해당 버그수정 commit을 가져오자.
+
+<img width="374" alt="image" src="https://user-images.githubusercontent.com/51740388/188311139-577f2218-1f3c-459b-9f6c-920d3c4a2680.png">
+
+* 순서가 위에서 아래로 내려올수록 최신순이다.
+
+<img width="509" alt="image" src="https://user-images.githubusercontent.com/51740388/188311167-a7567ebd-a335-4362-bdd8-6bfacbf99704.png">
+
+* 두개의 커밋을 합칠 때 위와 같이 뜬다.
+
+<img width="353" alt="image" src="https://user-images.githubusercontent.com/51740388/188311233-ec33c0c5-1ae3-4c7a-804d-dacac2ee76ea.png">
+
+### 6-4) git rebase -i : 하나의 커밋 두 개로 분기하기
+
+* 캐릭터 귤맨 추가, 시작메뉴 디자인 변경같은 경우 2개의 커밋이 하나의 커밋에 들어가있다.
+
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/51740388/188311307-49f91742-7e89-4e6b-bebd-c38ab321d59f.png">
+
+* file3에는 귤맨 추가, file4에는 시작메뉴 디자인 변경이 일어났으므로 2개의 커밋을 쪼갤 것이다.
+
+<img width="365" alt="image" src="https://user-images.githubusercontent.com/51740388/188311351-8d8d9fbd-794b-499b-bf8f-40d8b3fa033e.png">
+
+* 결전의 찜질방 맵 추가 commit으로 rebase -i를 준다. 그리고, 캐릭터 귤맨 추가, 시작 메뉴 디자인 변경에 대한 옵션을 e를 준다.
+
+<img width="571" alt="image" src="https://user-images.githubusercontent.com/51740388/188311431-b1841bbf-b276-44a0-857f-2005243ee48f.png">
+
+* 해당 커밋이 더해지기 전 커밋으로 가기위해 git reset head^를 주자.
+
+<img width="658" alt="image" src="https://user-images.githubusercontent.com/51740388/188311478-568a81cf-db75-405e-befd-fb366a9f0aa8.png">
+
+* 그리고 해당 commit들을 따로따로 더해준 뒤, rebase --continue를 해준다.
+
+<img width="313" alt="image" src="https://user-images.githubusercontent.com/51740388/188311495-908269ee-b80d-49dc-99e3-1d6e9336b26a.png">
+
+* 따로따로 더해진 것을 확인할 수 있다.
+
+### 6-5) rebase인 이유?
+
+* 만약 이전 커밋에서 변경사항이 발생하면, 다음 커밋은 더 이상 해당 커밋과 같은 것이 아니게 된다.
+* 그러므로 git에서 과거의 어떤 내역을 수정하기 위해서는 해당 시점까지를 딱 자른 다음에, 해당 시점부터 이후까지를 다시 작성해주는 새로운 branch를 생성한 다음에 해당 브랜치에 rebase로 갖다 붙이는 식으로 동작한다.

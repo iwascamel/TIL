@@ -20,7 +20,6 @@
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/51740388/188636049-de4127d1-9865-49c4-9164-0b3b3da51cf8.png">
 
-
 * 대신 fast forward의 단점은 어떤 브랜치를 사용했고, 언제 병합했는 지에 대한 기록이 남지 않게 된다는 것이다.
 * 만약 병합 커밋을 만들어서 merge를 하려면
 
@@ -45,7 +44,6 @@
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/188637545-6796c14b-f050-4084-92db-69032934c287.png">
 
 <img width="260" alt="image" src="https://user-images.githubusercontent.com/51740388/188637712-c8cd76df-9154-4aab-8c94-89901488f6da.png">
-
 
 * 예제 현 상황
 	* 두 개는 같은 그림이다.

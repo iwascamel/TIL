@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "강좌정리/얄코git강좌/섹션6-되돌리기.md",
+            "file": "강좌정리/얄코git강좌/섹션7-branch&분석.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "강좌정리/얄코git강좌/섹션6-되돌리기.md",
+                "file": "강좌정리/얄코git강좌/섹션7-branch&분석.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,9 +89,9 @@
   },
   "active": "6b1af31cc9f09f10",
   "lastOpenFiles": [
-    "강좌정리/얄코git강좌/섹션4-git동작원리.md",
-    "강좌정리/얄코git강좌/섹션5-commit.md",
     "강좌정리/얄코git강좌/섹션6-되돌리기.md",
+    "강좌정리/얄코git강좌/섹션5-commit.md",
+    "강좌정리/얄코git강좌/섹션4-git동작원리.md",
     "Pasted image 20220904202756.png",
     "강좌정리/코틀린입문/섹션별readme모음/섹션4-코틀린의OOP.md",
     "강좌정리/코틀린입문/섹션별readme모음/섹션6-코틀린특성.md",

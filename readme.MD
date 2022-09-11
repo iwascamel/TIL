@@ -1,11 +1,16 @@
-# 책 & 강좌 정리
+# 책 정리
 
 * [하루3분 네트워크 교실](./책정리/하루3분-네트워크-교실/readme.md)
 * [쉽게 배우는 운영체제](./책정리/쉽게-배우는-운영체제/readme.md)
-* [CS 지식의 정석](./강좌정리/CS지식의정석/readme.md)
 * [Practical Modern Java](./책정리/practical_modern_java/readme.MD)
+* [프로그래머의뇌](./책정리/프로그래머의뇌/readme.md)
+
+# 강좌 정리
+
+* [CS 지식의 정석](./강좌정리/CS지식의정석/readme.md)
 * [자바 개발자를 위한 kotlin 입문](./강좌정리/코틀린입문/readme.md)
 * [얄코 git 강좌](./강좌정리/얄코git강좌/readme.md)
+
 
 # CS
 

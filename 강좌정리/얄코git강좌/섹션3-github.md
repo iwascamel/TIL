@@ -11,10 +11,10 @@
     * origin
         * 원격 저장소의 이름
         * 바꿀 수 있으나, 바꾸지 않는게 권장된다.
-* git branch -M main
+* git branch -M 책정리.다재다능코틀린프로그래밍.codes.main
     * 기본 브랜치명을 main으로 설정
-* git push -u origin main
-    * 어느 원격에다가(origin) , 그리고 어느 브랜치에다가(main) push할 지 설정한다.
+* git push -u origin 책정리.다재다능코틀린프로그래밍.codes.main
+    * 어느 원격에다가(origin) , 그리고 어느 브랜치에다가(책정리.다재다능코틀린프로그래밍.codes.main) push할 지 설정한다.
     * -u
         * 기본으로 세팅해준다.
         * 혹은 --set-upstream

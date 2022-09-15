@@ -64,7 +64,7 @@ public class Main {
     static class B{
     }
 
-    public static void main(String[] args){
+    public static void 책정리.다재다능코틀린프로그래밍.codes.main(String[] args){
         Category<A> category = new Category<>();
         category.t = new A();
         category.print(new B());

@@ -11,10 +11,10 @@
     * origin
         * 원격 저장소의 이름
         * 바꿀 수 있으나, 바꾸지 않는게 권장된다.
-* git branch -M main
+* git branch -M 책정리.다재다능코틀린프로그래밍.codes.main
     * 기본 브랜치명을 main으로 설정
-* git push -u origin main
-    * 어느 원격에다가(origin) , 그리고 어느 브랜치에다가(main) push할 지 설정한다.
+* git push -u origin 책정리.다재다능코틀린프로그래밍.codes.main
+    * 어느 원격에다가(origin) , 그리고 어느 브랜치에다가(책정리.다재다능코틀린프로그래밍.codes.main) push할 지 설정한다.
     * -u
         * 기본으로 세팅해준다.
         * 혹은 --set-upstream
@@ -40,15 +40,16 @@
 			* 이 때의 rebase를 할 때, 공유된 것에 대해서 사용하지 말라고 했는데, 공유된 것에 대해서 하지 말라는 것이지 pull 할 때는 괜찮다.
 
 <img width="760" alt="image" src="https://user-images.githubusercontent.com/51740388/184874340-99dd54d0-949c-4be8-aa27-896ab94f7e11.png">
+
 * pull rebase를 하게 되면 main의 커밋을 origin보다 앞에 배치하게 해준다.
 	* 즉, 원격거를 일단 붙이고, 그 다음에 내거를 잘라서 붙여주는 방식이다.
 
 * 만약 rebase의 경우 accept theirs로 origin거를 받아들였다면
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/51740388/184875369-85c3c4ac-ee0b-414e-8945-2111d9e5a927.png">
+
 * 위와 같이 main과 origin의 커밋이 같이 있게 된다.
 	* 즉, 커밋이 추가되지 않게 된다.
-
 
 #### 강제 push
 

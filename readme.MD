@@ -11,6 +11,7 @@
 * [Practical Modern Java](./책정리/practical_modern_java/readme.MD)
 * [프로그래머의뇌](./책정리/프로그래머의뇌/readme.md)
 * [객체 지향의 사실과 오해](./책정리/객체지향의사실과오해/readme.md)
+* [다재다능 코틀린 프로그래밍](./책정리/다재다능코틀린프로그래밍/readme.md)
 
 # 강좌 정리
 

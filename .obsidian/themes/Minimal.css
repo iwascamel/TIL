@@ -120,7 +120,7 @@ settings:
     - 
         id: bg1
         title: Primary background
-        description: Background color for the main window
+        description: Background color for the 책정리.다재다능코틀린프로그래밍.codes.main window
         type: variable-themed-color
         format: hex
         default-light: '#'

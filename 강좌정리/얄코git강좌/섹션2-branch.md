@@ -64,19 +64,19 @@
 
 ### 4-1) Merge
 
-* main branch에서 add-coach branch를 merge하게 되면 아래와 같은 그래프가 나오게 된다.
+* 책정리.다재다능코틀린프로그래밍.codes.main branch에서 add-coach branch를 merge하게 되면 아래와 같은 그래프가 나오게 된다.
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/184528090-65ccce5e-c5f0-4756-a539-eb716636025b.png">
 
 * merge역시 하나의 커밋이다.
 	* 그렇기 때문에 reset으로 되돌릴 수 있다.
-* main 직전의 커밋(위 그래프에선 `Add Freddie to Panthers`)으로 reset --hard로 되돌리면 아래와 같이 되돌아간다.
+* 책정리.다재다능코틀린프로그래밍.codes.main 직전의 커밋(위 그래프에선 `Add Freddie to Panthers`)으로 reset --hard로 되돌리면 아래와 같이 되돌아간다.
 
 <img width="650" alt="image" src="https://user-images.githubusercontent.com/51740388/184528147-226a8deb-0b71-4424-8ef9-a54d1b2dbad5.png">
 
 ### 4-2) Rebase
 
-* 만약 A브랜치를 main에 합치려고 한다면 main 에서 git merge A를 해주어야 하지만, rebase는 반대다.
+* 만약 A브랜치를 main에 합치려고 한다면 책정리.다재다능코틀린프로그래밍.codes.main 에서 git merge A를 해주어야 하지만, rebase는 반대다.
 * A로 이동 후, A에서 rebase main을 해줘야 한다.
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/184528277-693ae0e2-5140-4885-8a52-0ac9b822797a.png">
@@ -96,7 +96,7 @@
 
 ### 5-2) 충돌 발생 예제: Merge
 
-* main 브랜치와 conflict-1, conflict-2 브랜치가 충돌이 나게 설정한다.
+* 책정리.다재다능코틀린프로그래밍.codes.main 브랜치와 conflict-1, conflict-2 브랜치가 충돌이 나게 설정한다.
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/184528510-38cc5d4c-9025-47e3-b35a-1ee470cda19e.png">
 
@@ -131,7 +131,7 @@ manager: Deborah
 <img width="603" alt="image" src="https://user-images.githubusercontent.com/51740388/184540015-3a01ef05-d9bf-43ee-8562-ab237b5b98c6.png">
 
 * git switch conflict-2
-* git rebase main
+* git rebase 책정리.다재다능코틀린프로그래밍.codes.main
 * 하면 위와 같이 충돌이 생긴다.
 
 <img width="572" alt="image" src="https://user-images.githubusercontent.com/51740388/184540053-df026e2f-5eff-47ce-8883-0e95c3a1b495.png">

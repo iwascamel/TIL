@@ -59,7 +59,7 @@
     --text-title-h5: var(--brass-bright); /* Custom Color for H5 ##### Headings */
 
     /* UI Elements */
-    --background-modifier-border: var(--brass-deep); /* The border around the graph options, decorative divider lines ---, borders of block quotes / tables, the line separating the bottom bar and the 책정리.다재다능코틀린프로그래밍.codes.main windows, the default for the lines connecting nodes in graph view, the border around drop boxes, and the background color of sliders */
+    --background-modifier-border: var(--brass-deep); /* The border around the graph options, decorative divider lines ---, borders of block quotes / tables, the line separating the bottom bar and the 책정리.다재다능코틀린프로그래밍.codes.chap4.main windows, the default for the lines connecting nodes in graph view, the border around drop boxes, and the background color of sliders */
     --background-modifier-form-field: var(--black); /* The idle background for dropdown menus, the background for text fields */
     --background-modifier-form-field-highlighted: var(--green-deep); /* Background color on mouseover/hover on dropdown menus and text fields */
     --background-modifier-box-shadow: var(--silver-deep); /* Drop shadow for context-based tool tips and settings menu. */

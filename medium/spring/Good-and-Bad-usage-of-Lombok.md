@@ -7,7 +7,7 @@
 
 ## 2. how lombok works
 
-* there are three 책정리.다재다능코틀린프로그래밍.codes.main steps in the process
+* there are three 책정리.다재다능코틀린프로그래밍.codes.chap45.main steps in the process
   1. Parse and Enter
   2. Annotation Processing
   3. Analyse and generate

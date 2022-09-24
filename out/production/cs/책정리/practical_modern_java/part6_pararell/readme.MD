@@ -161,7 +161,7 @@ System.out.println("thread pool size = " + ForkJoinPool.getCommonPoolParallelism
 ```
 
 위의 코드와 같이 `System.setProperty()` 를 통해 기본 값을 변경한다.
-* 위의 방법은 책정리.다재다능코틀린프로그래밍.codes.main 메서드 외 추가적으로 2개의 메서드가 생성된다.
+* 위의 방법은 책정리.다재다능코틀린프로그래밍.codes.chap45.main 메서드 외 추가적으로 2개의 메서드가 생성된다.
 * <img width=500 src="./images/parallel2.png">
 
 * `ForkJoinPool` 의 기본값을 변경하는 것이기 때문에 JVM 전체에 영향을 미친다.
@@ -176,7 +176,7 @@ customPool.submit(()->{
 }).get()
 ```
 
-이 코드는 책정리.다재다능코틀린프로그래밍.codes.main 메서드가 존재하지 않고, `ForkJoinPool` 의 parameter로 넘긴 값만큼만 스레드가 생성되기 때문에 좀 더 직관적이나,코드가 좀 더 복잡할 수 있다.
+이 코드는 책정리.다재다능코틀린프로그래밍.codes.chap45.main 메서드가 존재하지 않고, `ForkJoinPool` 의 parameter로 넘긴 값만큼만 스레드가 생성되기 때문에 좀 더 직관적이나,코드가 좀 더 복잡할 수 있다.
 
 ### 8-3) parallel & sequential
 

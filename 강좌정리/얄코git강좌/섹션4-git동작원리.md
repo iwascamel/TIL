@@ -141,7 +141,7 @@
 	* fetch + merge or rebase
 	* default는 merge다.
 
-* 그래서 책정리.다재다능코틀린프로그래밍.codes.main - origin/main이 있다고 했을 때, git fetch만 받아온다.
+* 그래서 책정리.다재다능코틀린프로그래밍.codes.chap45.main - origin/main이 있다고 했을 때, git fetch만 받아온다.
 	* 그리고, git checkout origin/main을 한 다음에 해당 코드들을 돌려보고 이후 merge를 해줘도 된다.
 
 * git switch -t origin/new-branch
@@ -190,7 +190,7 @@
 * pull 기본전략
 	* git config pull.rebase (true/false)
 		* true면 rebase, false면 merge
-* git config --global init.defaultBranch 책정리.다재다능코틀린프로그래밍.codes.main
+* git config --global init.defaultBranch 책정리.다재다능코틀린프로그래밍.codes.chap45.main
 	* main을 기본 브랜치로 설정
 * -u 옵션
 	* 현재의 local branch를 remote의 어떤 브랜치와 연결할 지에 대한 옵션

@@ -35,20 +35,20 @@
     * 이 때, default argument의 위치는 관용적으로 뒤에 있어야 한다.
         * lambda 표현식이 있다면, lambda 표현식 앞에 위치시켜라.
 * default argument를 활용할 수 있다.
-    * [code참조](./codes/Chap123.kt)
+    * [code참조](./codes/chap123/Chap123.kt)
 
 ### 3-3) vararg(다중인자), spread
 
 #### vararg
 
 * println()은 여러개의 인자를 받는다.
-* [vararg 예제코드 참조](./codes/Chap123.kt)
+* [vararg 예제코드 참조](./codes/chap123/Chap123.kt)
     * vararg를 사용할 때는 항상 마지막에 사용하라.
     * 마지막 파라미터가 람다표현식일 경우, 마지막 바로 전에 둔다.
 
 #### spread
 
-* [spread 예제코드 참조](./codes/Chap123.kt)
+* [spread 예제코드 참조](./codes/chap123/Chap123.kt)
 * vararg에 배열을 넘길 경우, 배열 앞에 *를 붙여주면 된다.
     * *를 spread연산자라고 한다.
 * list의 경우 toIntArray()를 통해 array를 만들어준다.
@@ -56,7 +56,7 @@
 ### 3-4) 구조분해
 
 * 한 줄로 여러 개의 input을 받을 수 있다.
-* [구조분해 코드 참조](./codes/Chap123.kt)
+* [구조분해 코드 참조](./codes/chap123/Chap123.kt)
 * 값 무시
     * `val(first, _, third) = getFullName()`
     * 값을 무시하고 싶다면 `_`를 적어주며 된다.

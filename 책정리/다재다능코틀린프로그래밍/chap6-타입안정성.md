@@ -53,3 +53,74 @@
     * application이 불타는 것을 보고 싶지 않다면(ㅋㅋ), 안전한 캐스트 연산자를 사용해라(?을 사용하라는 말이다.).
 
 ## 5. 제네릭
+
+### 5-1) 도입
+
+* java에서 기본적으로 제네릭은 타입 불변성을 강요했다.
+* 공변성(covariance)
+    * T 타입의 자식 클래스의 허용이 필요한 것을 의미한다.
+    * 제약사항
+        * 사용처 가변성
+            * 제네릭을 사용할 땐 사용 가능하다.
+        * 선언처 가변성
+            * 제네릭을 선언할 땐 사용이 불가능하다.
+* 반공변성(contravariance)
+    * 컴파일러에게 자식 클래스를 부모 클래스 자리에 사용할 수 있게 해달라는 요청
+    * 부모 클래스의 허용을 위해 `<? super T>`
+    * 이 역시 사용처 가변성만 가능하고, 선언처는 불가능하다.
+
+### 5-2) 타입 불변성
+
+* Animal <- Dog 일 때, T 자리에 Animal가 설정됐다면, 자식이라고 하더라도 Dog를 넘길수는 없다.
+    * 즉, 타입이 변경될 수는 없다.
+* 코틀린은 Array는 제한하고, List는 풀어준다.
+    * `Array<T>`는 Mutable하지만, `List<T>`는 Immutable하기 때문이다.
+* `Array<T>` 는 `class Array<T>` 로 정의되며, `List<T>`는 `interface List<out E>`로 정의된다.
+
+### 5-3) 공변성 & 반공변성
+
+* 타입 프로젝션(사용처 가변경: use-site variance)
+    * 제네릭 클래스를 사용하는 관점에서 공변성을 이용하는 것
+* 코틀린은 `Array<Fruit>` 자리에 `Array<Cherry>` 를 전달하지 못하도록 막는다.
+    * `Array<T>`의 타입은 변경될 수 없다.
+* from에서는 읽기만하고, to에 값을 설정하는 경우 하위 타입을 전달할 수 있다.
+* 공변성을 사용하기 위해서 코틀린 컴파일러에게 `Array<T>`의 parameter값에서 어떤 값도 변경하지 않는 다는 약속을 해야한다.
+* 선언처 가변성
+    * 제네릭을 사용할 때가 아니라 선언할 때 공변성을 지정하는 것
+    * 좋은 예시
+        * `List<out T>`
+* in 키워드는 메소드가 파라미터에 값을 설정할 수 있게 만들고, 읽을 수 없게 만든다.
+    * in은 반공변성이다.
+    * out은 공변성이다.
+
+### cf) 공변, 반공변
+
+```kotlin
+interface Box<T>
+open class Language
+open class JVM : Language()
+class Kotlin : JVM() {}
+```
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/51740388/193746815-76f672bb-5408-4eee-83cb-8ee07bfa1b75.png">
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/51740388/193745555-be168f2c-bb73-490a-bb93-bc33fec618a2.png">
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/51740388/193745571-db69c41a-504f-4116-9ec4-85d45a7a90a7.png">
+
+* [블로그 출처](https://sungjk.github.io/2021/02/20/variance.html)
+* **out은 공변 자식타입, in은 반공변 부모타입이라고 이해하면 될 것 같다.**
+
+### 5-4) 스타 프로젝션
+
+```kotlin
+fun printValues(values: Array<*>){...}
+```
+
+* 읽는 것만 허용하고, 쓰는 것은 허용하지 않는다.
+* 함수내의 어떠한 변경도 허용하지 않는다.
+
+### 5-5) reified
+
+* [관련내용](https://sungjk.github.io/2019/09/07/kotlin-reified.html)
+* 이해 안돼서 일단 넘어간다.

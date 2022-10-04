@@ -19,6 +19,7 @@ fun handleCountryV2(country: CountryV2){
     when(country){
         CountryV2.KOREA -> println("KOREA")
         CountryV2.AMERICA -> println("US")
+        else -> {}
     }
 }
 

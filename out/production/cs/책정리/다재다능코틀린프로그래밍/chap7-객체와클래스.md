@@ -54,5 +54,19 @@
 
 ## 3. companion object
 
+* [chap7-3-companionObject](./codes/chap7/chap7-3-companionObject.kt)
 * 컴패니언 객체는 클래스 안에 정의한 싱글톤이다.
-* 
+* 컴패니언 객체는 클래스의 팩토리로 사용될 수 있다.
+* 컴패니언을 팩토리로 사용하기 위해서는 class에 private constructor를 만들어줘야 한다.
+* [chap7-3-factory](./codes/chap7/chap7-3-factory.kt)
+    * 위처럼 companion object를 factory로 활용할 수 있다.
+* companion의 method가 class의 static method가 된다고 생각하면 안된다.
+  
+## 4. data class
+
+* 데이터 클래스는 알아서 `equals()`, `hashcode()`, `toString()` 등을 생성해주며, shallow copy method인 `copy()` 메서드도 자동으로 생성해준다.
+    * shallow copy는 참조복사(얕은복사)를 의미한다.
+    * 또, componentN(구조분해) 역시 제공해준다.
+* 구조분해
+    * 구조분해는 편리하나, data property의 순서대로 구조분해를 제공한다는 점에서 주의할 점이 존재한다.
+    * 만약 data property의 순서가 바뀐다면, 구조분해의 순서 역시 바뀌기 때문이다.

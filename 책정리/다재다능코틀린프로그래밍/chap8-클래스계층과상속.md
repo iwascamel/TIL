@@ -49,6 +49,13 @@
 * sealed 클래스를 사용하여 when을 표현할 때는 else를 사용하지 마라.
   * 왜냐하면 else를 추가하면 나중에 sealed클래스가 추가됐을 때 새로운 케이스가 추가됐음을 알리는 컴파일 오류가 나타나지 않고, 의도에 따라 동작하지 않을 확률이 높다.
 
+### cf) sealed class 추가설명
+
+* [해당블로그](https://kotlinworld.com/165)에 설명이 잘 돼있다.
+* sealed class를 왜 사용해야 하는가? 라고 생각이 들었는데, sealed class는 else로 생기는 여러 문제들을 우아하게 처리해준다.
+  * sealed class를 사용하면 같은 패키지의 자식 클래스만 상속이 가능하다.
+  * 그 이유는 모든 패키지를 돌면서 모든 자식을 찾는 것은 불필요하게 많은 자원을 사용하게 하기 때문이다.
+
 ## 5. enum
 
 * [enum](./codes/chap8/chap8-5-enum.kt)

@@ -1,0 +1,115 @@
+{
+  "main": {
+    "id": "6a54da3058fcacd4",
+    "type": "split",
+    "children": [
+      {
+        "id": "a152a7b2956c6d45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e78606ecc9ce0ce9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "out/production/cs/Java/java_whiteship_study/1-JVM.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "19f0eceeb3479661",
+    "type": "split",
+    "children": [
+      {
+        "id": "005792db38c2de7e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "791c7045f5b6a5c2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fe23c1d7f30aa6da",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 257
+  },
+  "right": {
+    "id": "0e002d3602d18681",
+    "type": "split",
+    "children": [
+      {
+        "id": "da24482881426e20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41242d31a35aca9e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "out/production/cs/Java/java_whiteship_study/1-JVM.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "fe23c1d7f30aa6da",
+  "lastOpenFiles": [
+    "Java/java_whiteship_study/1-JVM.md",
+    "책정리/다재다능코틀린프로그래밍/chap6-타입안정성.md",
+    "책정리/다재다능코틀린프로그래밍/readme.md",
+    "책정리/다재다능코틀린프로그래밍/chap4,5-kotlin-기본.md",
+    "책정리/다재다능코틀린프로그래밍/chap1,2,3-입문.md",
+    "readme.MD",
+    "강좌정리/코틀린입문/섹션별readme모음/섹션4-코틀린의OOP.md",
+    "강좌정리/코틀린입문/readme.md",
+    "강좌정리/코틀린입문/섹션별readme모음/섹션3-코드제어.md",
+    "강좌정리/코틀린입문/섹션별readme모음/섹션2-변수와타입.md"
+  ]
+}

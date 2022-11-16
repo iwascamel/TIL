@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "out/production/cs/Java/java_whiteship_study/1-JVM.md",
+                "file": "강좌정리/얄코git강좌/섹션2-branch.md",
                 "mode": "preview",
                 "source": false
               }
@@ -57,8 +57,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "out/production/cs/Java/java_whiteship_study/1-JVM.md",
+                "file": "강좌정리/얄코git강좌/섹션2-branch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,20 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "fe23c1d7f30aa6da",
+  "active": "e78606ecc9ce0ce9",
   "lastOpenFiles": [
+    "강좌정리/얄코git강좌/섹션1-git기본.md",
+    "책정리/다재다능코틀린프로그래밍/chap7-객체와클래스.md",
+    "책정리/다재다능코틀린프로그래밍/chap4,5-kotlin-기본.md",
+    "out/production/cs/Java/java_whiteship_study/1-JVM.md",
     "Java/java_whiteship_study/1-JVM.md",
     "책정리/다재다능코틀린프로그래밍/chap6-타입안정성.md",
     "책정리/다재다능코틀린프로그래밍/readme.md",
-    "책정리/다재다능코틀린프로그래밍/chap4,5-kotlin-기본.md",
     "책정리/다재다능코틀린프로그래밍/chap1,2,3-입문.md",
     "readme.MD",
-    "강좌정리/코틀린입문/섹션별readme모음/섹션4-코틀린의OOP.md",
-    "강좌정리/코틀린입문/readme.md",
-    "강좌정리/코틀린입문/섹션별readme모음/섹션3-코드제어.md",
-    "강좌정리/코틀린입문/섹션별readme모음/섹션2-변수와타입.md"
+    "강좌정리/코틀린입문/섹션별readme모음/섹션4-코틀린의OOP.md"
   ]
 }

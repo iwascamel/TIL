@@ -1,3 +1,6 @@
 [submodule "spring-collection"]
 	path = spring-collection
 	url = https://github.com/camel-man-ims/spring-collection
+[submodule "algorithm-collection"]
+	path = algorithm-collection
+	url = https://github.com/camel-man-ims/algorithm-collection

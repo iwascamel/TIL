@@ -225,7 +225,6 @@ public abstract class StringUtils{
     * 클래스가 인스턴스화 될 때 새로운 값으로 복제되는 것이 아니라, 정적인 영역에서 값이 공유된다.
 * companion object
     * 클래스와 동행하는 유일한 오브젝트
-
 * companion object는 하나의 객체로 간주된다.
     * 때문에 이름을 붙일 수도 있고, 인터페이스를 구현할 수도 있다.
 * companion object에 유틸성 함수들을 넣어도 되지만, 최상단 파일을 활용하는 것이 추천된다.

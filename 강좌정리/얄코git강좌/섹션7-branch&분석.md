@@ -65,12 +65,12 @@
 	* 내가 원하는 것은 citrus브랜치만이다.
 * git rebase --onto (A: 도착 브랜치) (B: 출발 브랜치) (C: 이동할 브랜치)
 	* 나는 A에 있는 브랜치로 B브랜치에 있는 C브랜치를 옮겨 붙여 주겠다.
-	* git rebase --onto 책정리.다재다능코틀린프로그래밍.codes.chap45.main fruit citrus
+	* git rebase --onto main fruit citrus
 
 <img width="269" alt="image" src="https://user-images.githubusercontent.com/51740388/188639574-10720a55-6dea-4dc3-845c-2ed66d403783.png">
 
-* 이제 책정리.다재다능코틀린프로그래밍.codes.chap45.main branch의 head를 cirtus의 Lime커밋으로 옮겨주자.
-	* git swtich 책정리.다재다능코틀린프로그래밍.codes.chap45.main
+* 이제 main branch의 head를 cirtus의 Lime커밋으로 옮겨주자.
+	* git swtich main
 	* git merge cirtus
 		* 이러면 fast forward가 일어난다.
 
@@ -81,7 +81,7 @@
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/51740388/188640419-6f893496-5409-4640-af97-75b203666365.png">
 <img width="288" alt="image" src="https://user-images.githubusercontent.com/51740388/188640554-1f8ac0f9-08e4-4c60-b32c-49b01df70627.png">
 
-* 책정리.다재다능코틀린프로그래밍.codes.chap45.main 브랜치에서
+* main 브랜치에서
 	* git merge --squash root
 
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/51740388/188640722-0d872b16-1bf8-4e3f-b68f-5b832d823ccd.png">

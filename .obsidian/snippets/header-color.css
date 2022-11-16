@@ -1,0 +1,28 @@
+/*for "Source mode" and "Live Preview"*/
+
+.cm-header-1{
+  color: #e24368
+}
+.cm-header-2{
+  color: #f99c3f
+}
+.cm-header-3{
+  color: #929dd5;
+}
+.cm-header-4{
+  color: #60d7a9
+}
+
+
+
+
+/*for "Source mode"*/
+/*
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5{
+color: #1900ff;
+}
+*/

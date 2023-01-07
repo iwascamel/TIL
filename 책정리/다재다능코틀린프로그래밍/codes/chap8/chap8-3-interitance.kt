@@ -13,7 +13,7 @@ open class Vehicle(val year: Int, open var color: String){
 open class Car(year:Int, color: String) : Vehicle(year, color){
     override var km: Int = 0
         set(value){
-            if(value < 1){
+            if(value < 1){ 
                 throw RuntimeException("에러!")
             }
             field = value

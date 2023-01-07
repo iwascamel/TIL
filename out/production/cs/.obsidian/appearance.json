@@ -1,7 +1,11 @@
 {
   "cssTheme": "",
   "enabledCssSnippets": [
-    "obsidian"
+    "obsidian",
+    "checkbox-stroke",
+    "font-style",
+    "header-color"
   ],
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "accentColor": ""
 }
